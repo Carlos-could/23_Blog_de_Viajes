@@ -1,0 +1,50 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+   font-family: Lato, sans-serif;
+}
+img{
+   max-width: 100%;
+}
+.contenedor{
+   max-width: 1200px;
+   margin: 0 auto;
+   /* width: 95%; */
+}
+
+.site-header{
+   margin-top: 20px;
+}
+
+.barra{
+   background-color: #DB008D;
+   margin-top: 20px;
+}
+
+.navegacion-principal a{
+   color: #ffffff;
+   text-decoration: none;
+   display: block;
+   text-align: center;
+   padding: 20px;
+   font-size: 22px;
+   font-weight: 700;
+}
+@media (min-width: 768px) {
+   .navegacion-principal a{
+      display: inline-block;
+   }
+}
+
+.navegacion-principal a:hover{
+   background-color: #00B9E5;
+}
+
+.entrada{
+   margin-top: 30px;
+}
