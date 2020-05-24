@@ -42,6 +42,39 @@ img{
    display: block;
 } /*Limpiador de float*/
 
+/* Navegacion Responsive */
+.barra{
+  overflow: hidden;
+}
+.mobile-menu{
+  color: #ffffff;
+  font-size: 2rem;
+  text-align: center;
+  display: block;
+  padding: 20px 0;
+}
+
+#nav:target{
+  max-height: 800px;
+}
+
+.navegacion-principal{
+  max-height: 0;
+  transition: 0.5s;
+}
+
+@media (min-width: 768px) {
+  .navegacion-principal{
+    max-height: unset;
+  }
+  .mobile-menu,
+  .cerrar{
+    display: none!important;
+  }
+}
+
+
+/* Navegacion */
 .site-header{
    margin-top: 20px;
 }
@@ -142,7 +175,7 @@ h2{
 .footer-site{
    background-color: #DB008D;
    text-align: center;
-   padding: 20px 0;
+   padding: 20px 0 0 0;
    color: #ffffff
 }
 
@@ -153,15 +186,27 @@ h2{
 .footer-site a{
    color: #ffffff;
    text-decoration: none;
+   font-size: 18px;
+   margin-left: 22px;
 }
-
+.footer-site a:first-of-type{
+  margin:0;
+}
 @media (min-width: 768px) {
    .nosotros{
       float: left;
       width: 30%;
+      text-align: left;
    }
    .menu{
       float: right;
-      width: 70%;
+      width: 50%;
+      text-align: right;
    }
+}
+
+.copyright{
+  background-color: #680044;
+  margin: 20px 0 0 0;
+  padding: 20px 0;
 }

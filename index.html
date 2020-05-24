@@ -7,6 +7,7 @@
      <meta name="viewport" content="width=device-width, inicial-scale=1">
      <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
      <link rel="stylesheet" type="text/css" href="css/normalize.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
      <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
@@ -15,12 +16,20 @@
       <img src="img/logo.png" alt="Logo">
    </header>
    <div class="barra">
-      <nav class="contenedor navegacion-principal">
+
+      <a href="#nav" class="mobile-menu">
+         <i class="fas fa-ellipsis-v"></i>
+      </a>
+      <nav id="nav" class="contenedor navegacion-principal">
          <a href="#">Inicio</a>
          <a href="#">Nosotros</a>
          <a href="#">Blog</a>
          <a href="#">Tienda</a>
          <a href="#">Contacto</a>
+
+         <a href="#" class="cerrar">
+            <i class="fas fa-times"></i>
+         </a>
       </nav>
    </div>
 
@@ -67,7 +76,7 @@
       </aside>
    </div> <!-- Contenedor -->
    <footer class="footer-site">
-      <div class="contenedor">
+      <div class="contenedor clearfix">
          <seccion class="nosotros">
             <h2>Sobre nosotros</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, omnis, magnam! Sed iste quisquam, voluptatum pariatur quam, voluptatibus tenetur iure.</p>
@@ -84,6 +93,7 @@
          </section>
          </nav>
       </div>
+      <p class="copyright">BlogdeViajes - Todos los derechos reservados 2020 &copy</p>
    </footer>
 </body>
 </html>
