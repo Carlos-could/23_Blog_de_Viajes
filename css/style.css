@@ -8,14 +8,39 @@ html {
 body{
    font-family: Lato, sans-serif;
 }
+p{
+   font-size: 18px;
+   line-height: 2;
+}
 img{
    max-width: 100%;
 }
+
+.boton{
+   background-color: #00B9E5;
+   padding: 10px 30px;
+   display: inline-block;
+   text-decoration: none;
+   color: #ffffff;
+   font-weight: 700;
+   transition: 0.3s;
+}
+
+.boton:hover{
+   background-color: #007B9F;
+}
+
 .contenedor{
    max-width: 1200px;
    margin: 0 auto;
    /* width: 95%; */
 }
+
+.clearfix::after {
+   content: "";
+   clear: both;
+   display: block;
+} /*Limpiador de float*/
 
 .site-header{
    margin-top: 20px;
@@ -32,7 +57,7 @@ img{
    display: block;
    text-align: center;
    padding: 20px;
-   font-size: 22px;
+   font-size: 18px;
    font-weight: 700;
 }
 @media (min-width: 768px) {
@@ -45,6 +70,98 @@ img{
    background-color: #00B9E5;
 }
 
+/* Contenido Principal */
+.contenido-principal,
+.sidebar{
+   padding: 0 20px;
+}
+@media (min-width: 768px) {
+   .contenido-principal {
+      width: 70%;
+      float: left;
+      padding-right: 0 60px 0 0;
+   }
+   .sidebar{
+      width: 30%;
+      float: right;
+      padding: 0;
+      margin-top: 30px;
+   }
+}
+
+h2{
+   color: #00B9E5;
+}
 .entrada{
-   margin-top: 30px;
+   margin-top: 50px;
+}
+.entrada:last-of-type{
+   margin-bottom: 50px;
+}
+.entrada img{
+   display: block;
+}
+
+@media (min-width: 768px) {
+   .entrada img{
+      width: 300px;
+      float: left;
+      margin: 0 30px 0 0;
+     }
+}
+
+.entrada p{
+   text-align: justify;
+}
+
+
+/*Sidebar*/
+.sidebar ul{
+   list-style: none;
+   padding: 0;
+}
+
+.sidebar ul li{
+   padding: 10px;
+}
+.sidebar ul li:hover{
+   background-color: #00b9e5;
+
+}
+.sidebar ul li a{
+   color: #00B9E5;
+   font-size: 18px;
+   text-decoration: none;
+}
+
+.sidebar ul li:hover a{
+   color: #ffffff;
+}
+
+
+.footer-site{
+   background-color: #DB008D;
+   text-align: center;
+   padding: 20px 0;
+   color: #ffffff
+}
+
+.footer-site h2{
+   color: #ffffff;
+}
+
+.footer-site a{
+   color: #ffffff;
+   text-decoration: none;
+}
+
+@media (min-width: 768px) {
+   .nosotros{
+      float: left;
+      width: 30%;
+   }
+   .menu{
+      float: right;
+      width: 70%;
+   }
 }
